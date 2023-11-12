@@ -25,17 +25,57 @@ html, body{
 	margin-bottom:100px;
 }
 
-#age{
+#title{
+}
+
+#genres{
 	color:#265ea5;
-	font-weight:bold;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#divider{
+	font-size: 22px;
+}
+
+#title-heading{
+	display:inline-block;
+	font-size: 30px;
+}
+
+#will1{
+	width:50%;
 }
 
 
+.slider{
+	margin-top:20px;
+}
+
+.slider-img-container{
+
+}
+
+.slider-img{
+/*	width:calc(100% - 10px);*/
+	max-height: 240px;
+	margin-right:10px;
+	border-radius:6px;
+	opacity:0.85;
+}
+
+.slider-img:hover{
+	opacity:1;
+}
+
+/* main img */
+.img-container{
+	text-align: center;
+}
 
 @media (max-width: 750px) {
 	#main-section{
 		width:90%;
 	}
-	
 }
 

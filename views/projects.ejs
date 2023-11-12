@@ -29,7 +29,7 @@
 	<section>
 		<div id="main-section">
 			<div class="title">SETLIST TRACKER</div>
-			<div class="description">This is a proof of concept </div>
+			<div class="description">This is a proof of concept for a setlist (and song) archive that combines elements from FriendsofCheese, PhantasyTour, and Facebook groups into a simple user experience that encourages discussion and collaboration. </div>
 			<div id="setlist-tracker">
 				<div id="setlist-parent-container">
 					<b><div id="setlist-title"></div></b>
@@ -78,7 +78,31 @@
 					<div id="no-song-info">No song information available.</div>
 				</div><!-- song container -->
 
-				<div class="description">The <span class="code-block">Setlists</span> field displays a comma separated list of recent setlists where a song appears. Clicking a date from this list populates the setlist (not working for this demo). The section below details how this data is stored. </div><br>
+				<div class="description">The <span class="code-block">Setlists</span> field displays a comma separated list of recent shows where a song appears. Clicking a date from this list populates the setlist for that show (not working for this demo).  </div><br>
+
+				<div class="description">Here is an </div><br>
+
+
+
+				<!-- The section below details how this data is stored. -->
+
+
+				<div id="comments-container">
+					<div class="comment-container">
+						<div class="comment-body">
+							This was my first Cheese show after driving 13 hours from Rochester. I only recognized a few songs, but I'll never forget the Best Feeling with Keller sitting in, and the Black Clouds sandwich second set!
+						</div>
+						<div class="comment-user">
+							@abrahamlincoln420
+						</div>
+						<div class="comment-date">
+							2/15/2023
+						</div>
+
+					</div>
+				</div> <!-- comments container -->
+
+
 
 				<div class="title">DATABASE DESIGN</div>
 
@@ -221,7 +245,10 @@
 					</div>
 
 
-					<div class="description">Here, the <span class="code-block">setlists</span> field is an array of setlist ids. When new setlists are added to the <span class="code-block">SETLISTS</span> collection, the <span class="code-block">SONGS</span> collection is updated by appending the new <span class="code-block">setlist.id</span> to the <span class="code-block">setlists</span> field for each song in the setlist.
+					<div class="description">Here, the <span class="code-block">setlists</span> field is an array of setlist ids. When new setlists are added to the <span class="code-block">SETLISTS</span> collection, the <span class="code-block">SONGS</span> collection is updated by appending the new <span class="code-block">setlist.id</span> to the <span class="code-block">setlists</span> field for each song in the setlist.<br> 
+
+					<div class="description"><b>Linking setlists to songs</b> - To display the list of shows where a song is played as actual dates (and not just setlist <span class="code-block">ids</span>), we query the <span class="code-block">SETLISTS</span> collection for a list of dates, which we can then display as a comma separated list when a particular song is clicked. 
+
 				</div>
 
 

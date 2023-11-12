@@ -20,40 +20,52 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
 </head>
 <body>
 	<%- include('navigation.ejs') %>
 
-
 	<section>
 		<div id="main-section">
-			<p>Hello, and welcome. My name is Will Kung and I am a software engineer and a musician. I currently reside in Denver, Colorado with my girlfriend Rene and pitbull Millie, who are my best friends in the whole world.
+			<div id="title">
+				<span id="title-heading"> Willy K </span> <span id="divider">|</span><span id="title-secondary-heading"> Denver Musician</span>
+			</div>
+			<div id="genres">Country &#x2022; Bluegrass &#x2022; Funk &#x2022; Soul &#x2022; Jam </div>
+			<div id="subtitle">Here for a Rock n' Rollin', Honky Tonkin' good time! </div>
 
-			<p class="center-quote"><i>"Write this down, Take a little note" </i><br>- <b>George Strait</b></p>
+	   <div class="slider">
+	      <div class="slider-img-container"><img class="slider-img" src="/img/will1.jpeg"></div>
+	      <div class="slider-img-container"><img class="slider-img" src="/img/carousel/cervs-1.JPG"></div>
+	      <div class="slider-img-container"><img class="slider-img" src="/img/carousel/will-sc-1.jpeg"></div>
+	      <div class="slider-img-container"><img class="slider-img" src="/img/carousel/will-5.JPG"></div>
+	      <div class="slider-img-container"><img class="slider-img" src="/img/carousel/will-4.JPG"></div>
+	      <div class="slider-img-container"><img class="slider-img" src="/img/carousel/will-7.jpeg"></div>
+	   </div>
 
-			<p>I started lonesomefiddles in an effort to document the random thoughts, ideas, and epihanies that come to me during my brief moments of clarity and creativity. In addition to chronicling my adventures seeing my favorite band The String Cheese Incident, this website also serves as a sandbox environment for my various projects, most of which I start but never finish.</p>
+	   <div>Hello, and welcome! My name is Will Kung and I am a Denver musician. I play Country, Bluegrass, Funk, Jam, Rock & Blues. Keyboards and Guitar are my main instruments.
 
-			<p class="center-quote"><i>One Nation, Under a Groove? </i></p>
+	   </div>
 
-			<p>While this begins as a personal project, I'm buildling in opportunities for collaboration right from the start - My ultimate goal is to develop a network of like-minded individuals - i.e. SCI fanatics, jam band enthusiasts and festival goers with projects such as the <span class="project-title">Stats Tracker</span> or <span class="project-title">Show Reviews</span>, as well as a local community of Denver music lovers. Please reach out with any interest or ideas for potential collaboration and, as always, stay cheesey! - Will</p>
+				Wedding Singer
+				Gauranteed to make you laugh AND cry, or your money back
+
+
+
+		<div class="img-container"><img id="will1" src="img/will1.jpeg"/></div>
+
+			<!-- <p class="center-quote"><i>"Write this down, Take a little note" </i><br>- <b>George Strait</b></p> -->
+
+		
 
 			<p id="p-bottom" class="center-quote"><span id="keep-the-dream"><i>Keep The Dream Alive!</i></span></p>
 
-			<!-- <b>Hot Takes</b>
-			Getting married at a music festival is cringe level midnight
- -->
-		<!-- 	Take Time to Give Thanks, Make Time to be Givin'
-
-have a positive impact on the world  -->
-
-			<!-- Today I am 
-				<span id="age" class="code-example"></span> 
-				old. -->
 		</div> 
 	</section>
 
 
 	<%- include('footer.ejs') %>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
 
 </body>
 

@@ -163,8 +163,39 @@ br {
 /*	border-bottom:2px #eee solid;*/
 	margin-bottom:10px;
 }
+
 #no-song-info{
 	font-size:10px;
 	font-style: italic;
 	display:none;
+}
+
+#comments-container{
+	margin-top:25px;
+}
+
+.comment-container{
+	margin-bottom: 25px;
+	font-size: 12px;
+	padding:5px;
+	border-radius: 3px;
+	width:420px;
+	border:1px #666 solid;
+}
+
+.comment-date{
+	font-size:9px;
+	color:#999;
+	margin-top:2px;
+}
+
+.comment-user{
+	margin-top:10px;
+	display: inline-block;
+	background: #265ea5;
+	color:white;
+	font-size: 8px;
+	padding:3px 5px;
+	border-radius: 2px;
+	border:0px;
 }

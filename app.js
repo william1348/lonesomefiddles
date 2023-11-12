@@ -37,9 +37,12 @@ async function connectMongo(){
 			});
 
     		app.get("/", (req, res) => {
-				res.render("index", { categories: CATEGORIES})
+				res.render("index")
 			});
 
+			app.get("/booking", (req, res) => {
+				res.render("booking")
+			});
 
 			app.get("/browse", (req, res) => {
 				refreshItems();
