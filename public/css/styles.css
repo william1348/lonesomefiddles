@@ -12,7 +12,9 @@
 
 */
 
+*{
 
+}
 body{
 	width:100%;
 	margin:0;
@@ -20,6 +22,9 @@ body{
 	overflow-x:hidden;
 }
 
+p{
+		color:#444;
+}
 html,body{
 	overflow-x: hidden;
 }
@@ -38,6 +43,11 @@ h5{
 
 h6{
 	font-size:8px;
+}
+
+.subheading{
+	font-size: 30px;
+	font-weight: bold;
 }
 
 .code *{
@@ -71,13 +81,11 @@ h6{
 
 #main-section{
 /*	max-width: 960px;*/
-max-width: 100%;
-	font-size: 14px;
-	margin-top:20px;
+	max-width: 100%;
+	font-size: 16px;
 	padding:20px;
 	width:80%;
 	margin-bottom:50px;
-
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -162,7 +170,7 @@ max-width: 100%;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ffde17;
+  background-color: #265ea5;
   color: white;
   height:50px;
   text-align: center;

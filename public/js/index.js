@@ -13,7 +13,11 @@ $(document).ready(function(){
 
 
 function initialize(){
-//a
+
+  $('.wedding-slider').slick({
+    infinite: false,
+    slidesToShow: 2,
+  });
 
   $(".slider").slick({
     dots:true,

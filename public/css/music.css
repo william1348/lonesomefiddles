@@ -1,0 +1,210 @@
+/*	dark brown:
+	#3c2415;
+
+	mid brown: 
+	#603913;
+
+	lite brown: 
+	#d3b297;
+
+	yellow:
+	#ffde17;
+
+*/
+*{
+/*	font-family: 'Open Sans', sans-serif;*/
+font-family: 'Baloo 2', sans-serif;
+}
+
+html, body{
+	padding:0;
+	margin:0;
+	background:white;
+}
+
+#back-tag{
+	position: absolute;
+	right:0;
+	cursor: pointer;
+	background:	#603913;
+	color:white;
+	position: absolute;
+	right:25px;
+	text-transform: uppercase;
+	top:0;
+	font-size: 14px;
+	font-weight: bold;
+	padding:3px 8px;
+	padding-bottom: 1px;
+	border-radius: 0px 0px 3px 3px;
+	font-family: 'Kalam', cursive;
+	box-shadow: 1px 1px 2px #666;
+}
+
+#p-bottom{
+	margin-bottom:100px;
+}
+
+#title{
+}
+
+#subtitle{
+	font-size:18px;
+	margin-top:-2px;
+	font-style: italic;
+	color:#444;
+}
+
+#genres{
+	color:#265ea5;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+#music-bio{
+	margin-top:25px;
+}
+
+#logo-music{
+	height:70px;
+	text-align: center;
+	margin:auto;
+}
+
+#logo-music-mobile{
+	display:none;
+}
+
+#logo-music-container{
+	margin-top:15px;
+	width:100%;
+	text-align: center;
+}
+
+#wedding-container, #booking-container{
+	margin-top:20px;
+}
+
+#divider{
+	font-size: 22px;
+}
+
+#title-heading{
+	display:inline-block;
+	font-size: 30px;
+}
+
+#will1{
+	width:50%;
+}
+
+
+.slider{
+	margin-top:0px;
+}
+
+.slider-img-container{
+
+}
+
+.slider-img{
+/*	width:calc(100% - 10px);*/
+	max-height: 240px;
+	margin-right:10px;
+	border-radius:6px;
+	opacity:0.85;
+}
+
+.slider-img:hover{
+	opacity:1;
+}
+
+.wedding-img{
+	padding:5px;
+	border-radius: 4px;
+	display:inline-block;
+}
+
+/* main img */
+.img-container{
+	text-align: center;
+}
+
+
+.booking-input{
+	width:calc(50% - 12px);
+	margin-right:10px;
+}
+
+.booking-input-large{
+	width:calc(100% - 10px);
+	margin-right:10px;
+}
+
+#booking-submit{
+	font-size:18px;
+	margin-top:10px;
+	background: #265ea5;
+	color:white;
+	border:0;
+}
+
+#booking-submit:hover{
+	opacity:0.9;
+}
+
+textarea{
+	margin-bottom:5px !important;
+}
+
+
+@media (max-width: 750px) {
+	#main-section{
+		width:90%;
+	}
+
+
+	#subtitle{
+		font-size:15px;
+		color:#444;
+	}
+
+	#genres{
+		color:#265ea5;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 15px;
+	}
+
+	#music-bio{
+		margin-top:25px;
+	}
+
+	#logo-music{
+		display:none;
+		height:auto;
+		width:85%;
+	}
+
+	#logo-music-mobile{
+		display:block;
+		width:80%;
+		max-width: 300px;
+		height:auto;
+		text-align: center;
+		margin:auto;
+		margin-bottom:5px;
+	}
+
+	#logo-music-container{
+		margin-top:15px;
+		width:100%;
+		text-align: center;
+	}
+
+	.booking-input, .booking-input-large{
+		width:100%;
+	}
+}
+
