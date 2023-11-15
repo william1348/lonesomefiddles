@@ -14,47 +14,17 @@ $(document).ready(function(){
 
 function initialize(){
 
-
-  $(".slider").slick({
-      dots:true,
-    // normal options...
-    infinite: true,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    variableWidth: true,
-
-    // the magic
-    responsive: [{
-
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          infinite: true
-        }
-
-      }, {
-
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          dots: true
-        }
-
-      }, {
-
-        breakpoint: 300,
-        settings: "unslick" // destroys slick
-
-      }]
+  $('.wedding-slider').slick({
+    infinite: false,
+    slidesToShow: 2,
   });
 
-  $(".millie-slider").slick({
+  $(".slider").slick({
     dots:true,
   // normal options...
   infinite: true,
   speed: 300,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   variableWidth: true,
 
@@ -63,7 +33,8 @@ function initialize(){
 
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 4,
+        slidesToScroll: 1,
         infinite: true
       }
 
@@ -72,6 +43,7 @@ function initialize(){
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 1,
         dots: true
       }
 
@@ -82,8 +54,6 @@ function initialize(){
 
     }]
 });
-
-
 }
 
 

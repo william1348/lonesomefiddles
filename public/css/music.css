@@ -12,8 +12,7 @@
 
 */
 *{
-/*	font-family: 'Open Sans', sans-serif;*/
-font-family: 'Baloo 2', sans-serif;
+	font-family: 'Baloo 2', sans-serif;
 }
 
 html, body{
@@ -45,8 +44,6 @@ html, body{
 	margin-bottom:100px;
 }
 
-#title{
-}
 
 #subtitle{
 	font-size:18px;
@@ -86,19 +83,9 @@ html, body{
 	margin-top:20px;
 }
 
-#divider{
-	font-size: 22px;
-}
-
-#title-heading{
-	display:inline-block;
-	font-size: 30px;
-}
-
 #will1{
 	width:50%;
 }
-
 
 .slider{
 	margin-top:0px;

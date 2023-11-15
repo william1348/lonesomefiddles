@@ -12,13 +12,27 @@
 
 */
 *{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Baloo 2', sans-serif;
 }
 
 html, body{
 	padding:0;
 	margin:0;
 	background:white;
+}
+
+.heading{
+	font-weight: bold;
+	font-size:28px;
+}
+
+#will-logo{
+	height:40px;
+}
+
+#denver{
+	font-weight: normal;
+	font-size:18px;
 }
 
 #p-bottom{
@@ -40,25 +54,55 @@ html, body{
 	color:#265ea5;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-top:-4px;
 }
 
-#wedding-container, #booking-container{
-	margin-top:20px;
+#wacky, #freelance{
+	margin-top:35px;
 }
 
-#divider{
+#wacky-img{
+	max-height: 120px;
+}
+
+
+.freelance-skill{
+	width:calc(25% - 50px);
+	display:inline-block;
+	float:left;
+	padding-right:50px;
+}
+
+.skill-title{
+	font-weight: bold;
+	font-size:20px;
+	text-transform: uppercase;
+}
+
+.skill-desc{
+	font-size:14px;
+	margin-top:10px;
+}
+
+/*#divider{
 	font-size: 22px;
 }
 
 #title-heading{
 	display:inline-block;
 	font-size: 30px;
+}*/
+
+
+#millie{
+	height:150px;
+	margin-top:20px;
+	border-radius: 6px;
 }
 
-#will1{
-	width:50%;
+.millie-slider{
+	margin-top:10px;
 }
-
 
 .slider{
 	margin-top:10px;
@@ -70,20 +114,15 @@ html, body{
 
 .slider-img{
 /*	width:calc(100% - 10px);*/
-	max-height: 240px;
+max-height:190px;
 	margin-right:10px;
 	border-radius:6px;
 	opacity:0.85;
+	object-fit: cover;
 }
 
 .slider-img:hover{
 	opacity:1;
-}
-
-.wedding-img{
-	padding:5px;
-	border-radius: 4px;
-	display:inline-block;
 }
 
 /* main img */
