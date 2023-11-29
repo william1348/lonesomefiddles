@@ -15,6 +15,7 @@
 *{
 
 }
+
 body{
 	width:100%;
 	margin:0;
@@ -50,6 +51,52 @@ h5{
 
 h6{
 	font-size:8px;
+}
+
+#cta-tag{
+	position: absolute;
+	cursor: pointer;
+	background:	#265ea5;
+	color:white;
+	position: absolute;
+	right:8%;
+	text-transform: uppercase;
+	top:0;
+	font-size: 14px;
+	font-weight: bold;
+	padding:3px 8px;
+	padding-bottom: 1px;
+	border-radius: 0px 0px 3px 3px;
+	font-family: 'Kalam', cursive;
+	box-shadow: 1px 1px 2px #666;
+}
+
+/*booking */
+#booking-container{
+	margin-top:50px;
+clear: both;
+}
+
+.booking-input{
+	width:calc(50% - 12px);
+	margin-right:10px;
+}
+
+.booking-input-large{
+	width:calc(100% - 10px);
+	margin-right:10px;
+}
+
+#booking-submit{
+	font-size:18px;
+	margin-top:10px;
+	background: #265ea5;
+	color:white;
+	border:0;
+}
+
+#booking-submit:hover{
+	opacity:0.9;
 }
 
 #bottom-text{
@@ -91,6 +138,7 @@ h6{
 	font-weight: bold;
 	width:100%;
 	text-align:center;
+	font-size: 18px;
 }
 
 #main-section{
@@ -105,7 +153,7 @@ h6{
 }
 
 #logo{
-	margin-top:5px;
+	margin-top:10px;
 	width:280px;
 	margin-left:auto;
 	margin-right:auto;
@@ -208,15 +256,23 @@ h6{
 
 
 @media (max-width: 650px) {
-	.menu-item{
 
+	.booking-input, .booking-input-large{
+			width:100%;
 	}
+
+		#cta-tag{
+			right:15px;
+	}
+}
+
 
 @media (max-width: 850px) {
 	
 	#main-section{
 		width:90%;
 	}
+
 	
 }
 

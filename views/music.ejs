@@ -3,15 +3,15 @@
 <head>
 	<title>Willie K | Denver Musician</title>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/model.js"></script>
-	<script src="js/util.js"></script>
-	<script src="js/music.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/music.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/jquery-ui.js"></script>
+	<script src="/js/model.js"></script>
+	<script src="/js/util.js"></script>
+	<script src="/js/music.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/music.css">
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/skeleton.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
 </head>
 <body>
 	<!-- <%- include('navigation.ejs') %> -->
-	<a href="/"><div id="back-tag">HOME</div></a>
+	<a href="/"><div id="cta-tag">HOME</div></a>
 	<section id="header-music">
 			<div id="logo-music-container">
 				<img id="logo-music" src="/img/willy-k-logo.png">
@@ -37,30 +37,90 @@
 	</section>
 
 
-	<section>
-		<div id="main-section">
+	<section id="main-section">
 			<div id="title">
 			
 			</div>
 			
-			
-
+		
 	   <div class="slider">
 	   	<div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-4.JPG"></div>
 	      <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-7.jpeg"></div>
-	   		      <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-sc-1.jpeg"></div>
-	      <div class="slider-img-container"><img class="slider-img" src="/img/will1.jpeg"></div>
 	   	<div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/cervs-1.JPG"></div>
-	      <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-5.JPG"></div>
-	   	<div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-1.JPG"></div>
+	      <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/polaroid-1.jpg"></div>	      
+   		<div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/cervs-4.jpg"></div>
+	      <div class="slider-img-container"><img class="slider-img" src="/img/will1.jpeg"></div>
+	      <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-sc-1.jpeg"></div>
+
+
+<!-- 	      <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-5.JPG"></div>
+	   	<div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-1.JPG"></div> -->
 
 	   </div>
 
-	   <div id="music-bio">
-	   	<p>Music is my life <span id="passion">passion</span>, and I'd love nothing more than to share it with YOU! My journey has taken me from small bars to large festivals and countless places in between, but there's plenty left to check off the bucket list. My dream is to play Red Rocks one day. I'm looking for a hard working, regularly-gigging Colorado based band in need of keys and/or guitar. Feel free to reach out with any gigging opportunities or inquries! </p>
-	   </div>
+	   <section id="music-bio">
+	   	<p>Music is my life <span id="passion">passion</span>, and I'd love nothing more than to share it with you! My journey has taken me from small bars to festivals and many places in between, but there's plenty left to check off the bucket list. My dream is to play Red Rocks one day. I'm looking for a hard working, regularly-gigging Colorado based band in need of keys and/or guitar. Feel free to reach out with any gigging opportunities or inquries! </p>
+	   </section>
 
-	   <section id="wedding-container">
+	   <section id="songs-container">
+	   	<div id="duo-title" class="subheading">Songs & Demos</div>
+			<!-- <p>These demos were recorded on a Zoom recorder with minimal processing. When performed live with a band please imagine they are usually 7-10 minute jammed out songs.</p>  -->
+
+			<div id="player-container">
+
+				<div id="player-left">
+
+					<div class="song">
+						<div id="song1" class="song-title">Millie's Song </div>
+						<audio controls src="/music/millies-demo-1.mp3"></audio>
+						<div class="controls">
+							<div class="song-info">INFO</div>
+							<div class="song-info-divider">/</div>
+							<div class="lyrics">LYRICS</div>
+						</div>
+						<div class="song-text">
+							This is a song I wrote about my dog, Millie. 
+						</div>
+						<div class="lyrics-text">
+							My baby she don't listen when I call<br>
+							Some people say she's not quite there at all<br>
+							Walks for miles, finds her way back home before too long<br>
+							Finds her way back home before too long<br>
+						</div>
+					</div>
+
+				</div>
+				
+				<iframe width="320" height="560"
+					src="https://www.youtube.com/embed/ncV_Fz3ACjo"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+
+
+				<!-- <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fwilllllllllllllllllllllllllll%2Fvideos%2F876547860466775%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
+				<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fwilllllllllllllllllllllllllll%2Fvideos%2F547624137294305%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> -->
+
+			</div>
+	   	
+
+
+	   	
+	   </section>
+
+	   <section id="duo-container">
+	   	<div id="duo-title" class="subheading">Lonesome Pickle Band</div>
+	   	<p>
+	   		The Lonesome Pickle Band is a dynamic bluegrass duo featuring guitar and mandolin. From traditional bluegrass rippers and fiddle tunes to tearjerkers and originals in the mix, Lonesome Pickle Band is available for gigs in the Denver area and beyond. <a href="#booking-container">Book Us</a> and we'll show you a country boppin' good time! 
+	   	</p>
+	   	<img id="lonesomepickle-img" src="/img/lonesomepickle/lp-1.jpg">
+
+	   </section>
+
+
+	   <!-- <section id="wedding-container">
 	   	<div id="wedding-title" class="subheading">The Wedding Singer</div>
 	   	<div id="wedding-subtitle">Gauranteed to make you laugh AND cry, or your money back</div>
 	   	<div class="wedding-slider">
@@ -72,7 +132,7 @@
 	   	</div>
 
 	   </section>
-
+ -->
 
 	   <section id="booking-container">
 	   	<div id="wedding-title" class="subheading">Booking & Contact</div>

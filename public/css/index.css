@@ -62,26 +62,33 @@ html, body{
 }
 
 #wacky-img{
-	max-height: 120px;
+	height:150px;
+	border-radius: 6px;
 }
 
+#freelance{
+	overflow:hidden;
+}
 
 .freelance-skill{
-	width:calc(25% - 50px);
+	width:calc(33% - 30px);
 	display:inline-block;
+	margin-right:30px;
 	float:left;
-	padding-right:50px;
 }
 
 .skill-title{
+	margin-top:20px;
 	font-weight: bold;
 	font-size:20px;
 	text-transform: uppercase;
 }
 
 .skill-desc{
-	font-size:14px;
+	font-size:15px;
 	margin-top:10px;
+	color:#888;
+	border-radius: 6px;
 }
 
 /*#divider{
@@ -134,5 +141,19 @@ max-height:190px;
 	#main-section{
 		width:90%;
 	}
+
+	.freelance-skill{
+		width:calc(100% - 20px);
+		display:inline-block;
+		margin:2px;
+
+	}
+
+	.skill-title{
+		text-align: center;
+	}
+	.skill-desc{
+
+}
 }
 

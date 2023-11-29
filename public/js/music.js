@@ -12,7 +12,26 @@ $(document).ready(function(){
 });
 
 
+function toggleLyrics(showLyrics){
+  if(showLyrics){
+    $('.song-text').hide();
+    $('.lyrics-text').show();
+  }else{
+    $('.song-text').show();
+    $('.lyrics-text').hide();
+  }
+}
+
 function initialize(){
+
+  $('.song-info').click(function(){
+    toggleLyrics(false);
+  });
+
+  $('.lyrics').click(function(){
+    toggleLyrics(true);
+  });
+
 
   $('.wedding-slider').slick({
     infinite: false,

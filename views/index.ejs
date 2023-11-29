@@ -12,24 +12,28 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
 </head>
 <body>
 	<%- include('navigation.ejs') %>
-
-	<section>
-		<div id="main-section">
-			<div id="title">
-				<!-- <img id="will-logo" src="/img/will-kung-logo.png"> -->
-				<div class="heading">Will Kung <span id="denver">| Denver, Colorado</span></div>
-				<div id="genres">Musician &#x2022; Software Engineer &#x2022; Business Owner </div>
-			</div>
+	<a href="#booking"><div id="cta-tag">BOOKING / CONTACT</div></a>
+	<!-- <div id="app"></div> -->
+	<section id="main-section">
+		<div id="title">
+			<!-- <img id="will-logo" src="/img/will-kung-logo.png"> -->
+			<div class="heading">Will Kung <span id="denver">| Denver, Colorado</span></div>
+			<div id="genres">Musician &#x2022; Software Developer &#x2022; Business Owner </div>
+		</div>
 
 	   <div class="slider">
 	   	    <div class="slider-img-container"><img class="slider-img" src="/img/home-carousel/will-4.JPG"></div>
@@ -38,7 +42,7 @@
 	        <div class="slider-img-container"><img class="slider-img" src="/img/home-carousel/cervs-2.jpeg"></div>	   		   
 	   </div>
 
-	   <div id="music-bio">
+	   <div id="bio">
 	   	<p><span class="code-link"><span id="greeting"></span></span>Hello, and thanks for stopping by. This is a landing page for my various projects, as well as a booking contact for my <a href="/music">music</a> and freelance <a href="#freelance">services</a>. A little about me - I was born and raised in Massachusetts, the son of hardworking Taiwanese immigrants. Denver has been my home the past 4+ years. After graduating with a degree in Electrical & Computer Engineering, I spent the past decade working in the tech industry. <u>I design and build websites and apps</u>, and I can help you kickstart your dream <b>today</b>! </p>
 
 	    Scroll down to learn more, but before you do, please consider this picture of my dog, Millie:
@@ -54,17 +58,9 @@
 
 	   -->
 
-		
-
-
-
 
 	
 			<!-- <p class="center-quote"><i>"Write this down, Take a little note" </i><br>- <b>George Strait</b></p> -->
-
-		
-
-			
 
 		</div> 
 
@@ -78,44 +74,40 @@
 			</div>
 		</section> <!-- wacky -->
 
-
 		<section id="freelance">
 			<div class="heading">Web Design & Development </div>
-			<p>I've been building websites and mobile apps for the past 12 years, including 10 in the professional workspace. I've worked on production apps with millions of global users (Bookshelf, STARZ), and I've worked at startups where I was the lead engineer and defacto UI/UX designer. You can find my full credentials on <a href="linkedin">LinkedIn</a>. Check out <a href="https://wackypackies.com">WackyPackies.com</a> for a complete demo of my visual and full-stack development skills. Here are four principles important to me: </p>
+			<p>I've been building websites and mobile apps for the past 12 years, including 10 in the professional workspace. I've worked on production apps with millions of global users (Bookshelf, STARZ), and I've worked at startups where I was the lead engineer and defacto UI/UX designer. You can find my full credentials on <a href="linkedin">LinkedIn</a>. Check out <a href="https://wackypackies.com">WackyPackies.com</a> for a complete demo of my visual and full-stack development skills. Here are three principles important to me: </p>
 
-			<div class="freelance-container">
+			<div id="freelance-container">
 				<div id="freelance-skill" class="freelance-skill">
 					<div class="skill-title">Responsive Design</div>
 					<div class="skill-desc">
-						Make it look good across <b>all</b> platforms, from large desktop screens to the smallest mobile devices. Code for <i>adaptability</i> - not just reszing graphics and content, but a broader approach taking into account how users interact with the app differently on different devices.
+						To me, responsive design means coding for <i>adaptability</i> - not just reszing graphics and content, but a broader approach taking into account how users interact with the app differently on different platforms.
 					</div>
 				</div>
 				<div id="freelance-skill1" class="freelance-skill">
 					<div class="skill-title">Minimalist</div>
 					<div class="skill-desc">
-						Keep it simple. This website, and all my sites,. No clunky plugins, unnecessary third party extensions, Clean, readable code. 
+						Keep it simple! Intuitive UI/UX. Fast loading mobile apps and web pages, no clunky plugins or unnecessary third party extensions. 
 					</div>
 				</div>
-				<div id="freelance-skill2" class="freelance-skill">
-					<div class="skill-title">Intuitive UI/UX</div>
-					<div class="skill-desc">
-						Material Design Principles. 
-					</div>
-				</div>
+			
 				<div id="freelance-skill3" class="freelance-skill">
 					<div class="skill-title">Best Practices</div>
 					<div class="skill-desc">
-						Most of this flies under the radar, Things like Accessibility, Meta Tags, compressing images to reduce load times, etc. 
+						Everything from User centric design and accessibility to Meta tags, SEO optiomization, image compression. Clean, readable, reusable code. 
 					</div>
 				</div>
 			</div>
-		</section><!-- freelance -->
-
-
-		<section id="booking">
-				<%- include('booking.ejs') %>
 		</section>
-	
+		<!-- freelance -->
+
+		<div id="booking">
+			<%- include('booking.ejs') %>
+		</div>
+
+
+
 	</section>
 
 
@@ -126,6 +118,10 @@
 	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
 
 </body>
+<!-- <script type="text/jsx">
+      const app = document.getElementById('app');
+      ReactDOM.render(<h1>Develop. Preview. Ship. 🚀</h1>, app);
+    </script> -->
 
 <script type="text/javascript">
 	var age = whatsMyAgeAgain();

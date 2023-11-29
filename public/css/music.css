@@ -21,25 +21,6 @@ html, body{
 	background:white;
 }
 
-#back-tag{
-	position: absolute;
-	right:0;
-	cursor: pointer;
-	background:	#603913;
-	color:white;
-	position: absolute;
-	right:25px;
-	text-transform: uppercase;
-	top:0;
-	font-size: 14px;
-	font-weight: bold;
-	padding:3px 8px;
-	padding-bottom: 1px;
-	border-radius: 0px 0px 3px 3px;
-	font-family: 'Kalam', cursive;
-	box-shadow: 1px 1px 2px #666;
-}
-
 #p-bottom{
 	margin-bottom:100px;
 }
@@ -79,7 +60,7 @@ html, body{
 	text-align: center;
 }
 
-#wedding-container, #booking-container{
+#wedding-container, #booking-container, #duo-container{
 	margin-top:20px;
 }
 
@@ -118,27 +99,105 @@ html, body{
 	text-align: center;
 }
 
-
-.booking-input{
-	width:calc(50% - 12px);
-	margin-right:10px;
+#lonesomepickle-img{
+	height:200px;
+	border-radius: 6px;
 }
 
-.booking-input-large{
-	width:calc(100% - 10px);
-	margin-right:10px;
+#player-container{
+	display: inline-block;
+	border-radius: 5px;
+	padding-bottom: 5px;
 }
 
-#booking-submit{
-	font-size:18px;
-	margin-top:10px;
-	background: #265ea5;
-	color:white;
-	border:0;
+#player-left{
 }
 
-#booking-submit:hover{
-	opacity:0.9;
+audio::-webkit-media-controls-enclosure {
+    border-radius: 2px;
+    width:100%;
+}
+
+audio{
+	margin:10px;
+	min-width: 420px;
+	max-width: 600px;
+}
+
+.controls{
+	margin-top: -10px;
+}
+
+.lyrics{
+	font-size: 10px;
+	margin-top:0px;
+}
+
+.lyrics:hover, .song-info:hover{
+	text-decoration: underline;
+	opacity:0.8;
+	transition: 0.3s;
+}
+
+.song{
+	border:2px #eee solid;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom:30px;
+}
+
+.song-text, .lyrics-text{
+	margin-left:12px;
+	margin-right:12px;
+	margin-top:3px;
+	margin-bottom:3px;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.lyrics-text{
+	display:none;
+	color:#666;
+}
+
+.song-info{
+	font-size: 12px;
+	display:inline-block;
+	font-weight: bold;
+	color:#2654a5;
+	margin-left:12px;
+	cursor: pointer;
+}
+
+.song-info-divider{
+	font-size: 12px;
+	display:inline-block;
+	font-weight: bold;
+	color:#444;
+	margin-left:4px;
+	margin-right:4px;
+	cursor: pointer;
+}
+
+.lyrics{
+	display: inline-block;
+	font-size: 12px;
+	margin-left:1px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.song-title{
+	vertical-align: top;
+	margin-bottom: -5px;
+	margin-top:5px;
+	margin-left: 12px;
+	display: block;
+}
+
+#player-right{
+	width:0%;
+	display:inline-block;
 }
 
 textarea{
@@ -146,7 +205,26 @@ textarea{
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 500px) {
+
+	audio::-webkit-media-controls-enclosure {
+	    border-radius: 2px;
+	    width:100%;
+	}
+
+	audio{
+		margin:10px;
+		min-width: 0px;
+	}
+
+	.song{
+		border:2px #eee solid;
+		display:inline-block;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+
 	#main-section{
 		width:90%;
 	}
@@ -176,7 +254,7 @@ textarea{
 
 	#logo-music-mobile{
 		display:block;
-		width:80%;
+		width:45%;
 		max-width: 300px;
 		height:auto;
 		text-align: center;
@@ -188,10 +266,6 @@ textarea{
 		margin-top:15px;
 		width:100%;
 		text-align: center;
-	}
-
-	.booking-input, .booking-input-large{
-		width:100%;
 	}
 }
 

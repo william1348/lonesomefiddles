@@ -1,64 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>WillyK | Booking</title>
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/model.js"></script>
-	<script src="js/util.js"></script>
-	<script src="js/index.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
-</head>
-<body>
-	<%- include('navigation.ejs') %>
+<section id="booking-container">
+   	<div id="wedding-title" class="subheading">Booking & Contact</div>
+   	<form id="booking-form">
+   		<input class="booking-input" type="text" name="name" hint="Name" placeholder="Name"/>
+   		<input class="booking-input" type="text" name="email" hint="Email" placeholder="Email"/>
+	   		<!-- <select id="booking-type" class="booking-input" name="Booking Type">
+   		  <option value="wedding">Gig Type:</option>
+			  <option value="wedding">Wedding</option>
+			  <option value="other">Other</option>
+			</select> -->
+			<textarea class="booking-input-large" type="textarea" name="detail" hint="How can I help you?" placeholder="How can I help you?"></textarea>
+			<div id="booking-subtitle">For <b>urgent</b> inquiries, feel free to text or call <a href="tel:781-492-4697">781-492-4697</a> or message me via Instagram or Facebook.</div>
+			<input id="booking-submit" type="submit" name="Submit">
 
-	<section>
-		<div id="main-section">
-			<p>Hello, and welcome! My name is Will Kung and I am a Denver musician. I play Country, Bluegrass, Funk, Jam, Rock & Blues. Keyboards and Guitar are my main instruments.
-
-				Wedding Singer
-				Gauranteed to make you laugh AND cry, or your money back
-
- <div class="slider-container">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
-  </div>
-
-				<div class="img-container"><img id="will1" src="img/will1.jpeg"/></div>
-
-			<!-- <p class="center-quote"><i>"Write this down, Take a little note" </i><br>- <b>George Strait</b></p> -->
-
-		
-
-			<p id="p-bottom" class="center-quote"><span id="keep-the-dream"><i>Keep The Dream Alive!</i></span></p>
-
-		</div> 
-	</section>
-
-
-	<%- include('footer.ejs') %>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
-
-</body>
-
-<script type="text/javascript">
-	var age = whatsMyAgeAgain();
-	$("#age").text(age);
-</script>
-
-</html>
+   	</form>
+</section>
