@@ -3,12 +3,27 @@ const path = require('path')
 const { MongoClient } = require("mongodb");
 const app = express()
 const util = require('util')
+const nodeMailer = require("nodemailer");
+const bodyParser = require('body-parser');
 const port = 3000
 var db;
 var client;
 var CATEGORIES = [];
 var ITEMS = [];
 var CONFIG = [];
+
+let transporter = nodeMailer.createTransport({
+  host: "smtp.zoho.com",
+  secure: true,
+  port: 465,
+  auth: {
+    user: "millie@wackypackies.com",
+    pass: "Ilovemillie123",
+  },
+});
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // var dbUrl ="mongodb+srv://admin:ilovemillie123@project.cib5r.mongodb.net/?retryWrites=true&w=majority";
 var dbUrl ="mongodb+srv://admin:ilovemillie123@cluster0.mnt3rz6.mongodb.net/?retryWrites=true&w=majority";
@@ -67,6 +82,13 @@ async function connectMongo(){
 
 			app.post("/payment", (req, res) => {
 				res.render("payment")
+			});
+
+			app.post("/booking", (req, res) => {
+				console.log('booking');
+				console.log(req.body);
+				sendBookingEmail(req.body.name, req.body.email, req.body.detail);
+				res.status(200).json({status:"ok"});
 			});
 
 
@@ -200,6 +222,24 @@ async function connectMongo(){
 }
 
 connectMongo();
+
+
+async function sendBookingEmail(name, email, subject){
+	const mailOptions = {
+	    from: "millie@wackypackies.com", 
+	    to: "wkung42@gmail.com",
+	    subject: "Booking Inquiry: " + name,
+	    html: "<div>" + subject + " from " + email + " </div>"
+	};
+
+	await transporter.sendMail(mailOptions, function(err, info) {
+		if (err) {
+		  	console.log('email error. ' + err);
+		}else{
+		  	console.log('poop');
+		}
+	});
+}
 
 
 async function refreshItems(){

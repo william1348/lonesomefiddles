@@ -9,8 +9,27 @@
 			  <option value="other">Other</option>
 			</select> -->
 			<textarea class="booking-input-large" type="textarea" name="detail" hint="How can I help you?" placeholder="How can I help you?"></textarea>
-			<div id="booking-subtitle">For <b>urgent</b> inquiries, feel free to text or call <a href="tel:781-492-4697">781-492-4697</a> or message me via Instagram or Facebook.</div>
+			<div id="booking-subtitle">For <b>urgent</b> inquiries, feel free to text or call <div style="display:inline-block;white-space: nowrap;"><a href="tel:781-492-4697">781-492-4697</a> </div>, or message me via Instagram or Facebook.</div>
 			<input id="booking-submit" type="submit" name="Submit">
-
    	</form>
 </section>
+<section id="booking-done">
+	<div id="booking-done-title">Thanks for reaching out! I'll be in contact soon. </div>
+</section>
+<script>
+   	  	$("#booking-form").submit(function(e){
+
+   	  		e.preventDefault();
+
+   	  		$.ajax({
+                url: '/booking',
+                type: 'post',
+                dataType: 'application/json',
+                data: $("#booking-form").serialize(),
+                complete:function(data){
+                	$('#booking-container').slideUp(800);
+                	$('#booking-done').fadeIn(300);
+                }
+        	});
+   	  	});
+</script> 

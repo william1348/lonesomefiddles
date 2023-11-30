@@ -137,7 +137,26 @@ max-height:190px;
 	text-align: center;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 500px) {
+
+	#millie{
+		height:auto;
+		width:100%;
+		margin-top:20px;
+		border-radius: 6px;
+	}
+
+	#wacky-img{
+		height:auto;
+		width:100%;
+		border-radius: 6px;
+	}
+
+	#genres{
+		font-size: 14px;
+		padding:0;
+	}
+
 	#main-section{
 		width:90%;
 	}
