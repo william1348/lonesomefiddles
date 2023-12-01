@@ -61,6 +61,7 @@ h6{
 }
 
 #cta-tag{
+	z-index:69;
 	position: absolute;
 	cursor: pointer;
 	background:	#265ea5;
@@ -72,6 +73,7 @@ h6{
 	font-size: 15px;
 	font-weight: bold;
 	padding:3px 8px;
+	padding-top:5px;
 	padding-bottom: 1px;
 	border-radius: 0px 0px 3px 3px;
 	font-family: 'Kalam', cursive;
@@ -281,7 +283,7 @@ clear: both;
 	}
 
 		#cta-tag{
-			right:25px;
+			right:15px;
 	}
 
 	#booking-submit{

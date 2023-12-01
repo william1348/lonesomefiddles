@@ -1,23 +1,25 @@
-console.log('index.js test');
 var MAX_HOME_ITEMS = 6;
 var categoryArray = [];
 
 $(document).ready(function(){
 	initialize();
-    // $.ajax({
-    //     url: BASE_URL + CATEGORIES
-    // }).then(function(data) {
-    // 	 populateCategories(data.categories);
-    // });
-
-//   var viewportOffset = $('#nav')[0].getBoundingClientRect();
-// // these are relative to the viewport, i.e. the window
-// var top = viewportOffset.top;
-// alert(top);
 });
 
 
 function initialize(){
+  
+  var top = $('.heading').position().top;
+  $(window).scroll(function(){
+  if($(document).scrollTop() > top){
+      if($('#cta-tag').css("position") == "absolute"){
+        $('#cta-tag').hide();
+        $('#cta-tag').css({"position" : "fixed"});
+        $('#cta-tag').fadeIn(300);
+      }
+    }else{
+         $('#cta-tag').css({"position" : "absolute"});
+    }
+  });
 
 
   $(".slider").slick({
