@@ -66,10 +66,10 @@ h6{
 	background:	#265ea5;
 	color:white;
 	position: absolute;
-	right:8%;
+	right:10%;
 	text-transform: uppercase;
 	top:0;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: bold;
 	padding:3px 8px;
 	padding-bottom: 1px;
@@ -159,7 +159,7 @@ clear: both;
 }
 
 #logo{
-	margin-top:5px;
+	margin-top:10px;
 	width:300px;
 	margin-left:auto;
 	margin-right:auto;
@@ -281,7 +281,7 @@ clear: both;
 	}
 
 		#cta-tag{
-			right:15px;
+			right:25px;
 	}
 
 	#booking-submit{

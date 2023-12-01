@@ -100,7 +100,8 @@ html, body{
 }
 
 #lonesomepickle-img{
-	height:200px;
+	width:50%;
+	max-width:420px;
 	border-radius: 6px;
 }
 
@@ -218,6 +219,7 @@ textarea{
 	}
 
 	#lonesomepickle-img{
+		max-width: none;
 		width:100%;
 		height:auto;
 	}	
