@@ -217,6 +217,11 @@ textarea{
 		min-width: 0px;
 	}
 
+	#lonesomepickle-img{
+		width:100%;
+		height:auto;
+	}	
+
 	.song{
 		border:2px #eee solid;
 		display:inline-block;

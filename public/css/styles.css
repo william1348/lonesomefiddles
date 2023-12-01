@@ -55,7 +55,7 @@ h6{
 
 #booking-done{
 	display:none;
-	font-size: 25px;
+	font-size: 20px;
 	margin-top:50px;
 	font-weight: bold;
 }
@@ -269,6 +269,15 @@ clear: both;
 
 	.booking-input, .booking-input-large{
 			width:100%;
+	}
+
+	#booking-done{
+		display:none;
+		font-size: 20px;
+		margin-top:20px;
+		margin-bottom:40px;
+		font-weight: bold;
+		text-align: center;
 	}
 
 		#cta-tag{

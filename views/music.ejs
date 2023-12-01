@@ -8,6 +8,7 @@
 	<script src="/js/model.js"></script>
 	<script src="/js/util.js"></script>
 	<script src="/js/music.js"></script>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="/css/music.css">
 	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
@@ -44,13 +45,16 @@
 			
 		
 	   <div class="slider">
-	   	<div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-4.JPG"></div>
+	    <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-4.JPG"></div>
+	    	   	<div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/cervs-1.JPG"></div>
+	    	    <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-sc-1.jpeg"></div>
+   		<div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/cervs-4.jpg"></div>	      
+	   	<div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/polaroid-1.jpg"></div>
+
 	      <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-7.jpeg"></div>
-	   	<div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/cervs-1.JPG"></div>
-	      <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/polaroid-1.jpg"></div>	      
-   		<div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/cervs-4.jpg"></div>
+
+
 	      <div class="slider-img-container"><img class="slider-img" src="/img/will1.jpeg"></div>
-	      <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-sc-1.jpeg"></div>
 
 
 <!-- 	      <div class="slider-img-container"><img class="slider-img" src="/img/music-carousel/will-5.JPG"></div>
@@ -134,27 +138,10 @@
 	   </section>
  -->
 
-	   <section id="booking-container">
-	   	<div id="wedding-title" class="subheading">Booking & Contact</div>
-	   	<form id="booking-form">
-	   		<input class="booking-input" type="text" name="name" hint="Name" placeholder="Name"/>
-	   		<input class="booking-input" type="text" name="email" hint="Email" placeholder="Email"/>
-		   		<!-- <select id="booking-type" class="booking-input" name="Booking Type">
-	   		  <option value="wedding">Gig Type:</option>
-				  <option value="wedding">Wedding</option>
-				  <option value="other">Other</option>
-				</select> -->
-				<textarea class="booking-input-large" type="textarea" name="detail" hint="How can I help you?" placeholder="How can I help you?"></textarea>
-				<div id="booking-subtitle">For <b>urgent</b> inquiries, feel free to text or call <a href="tel:781-492-4697">781-492-4697</a> or message me via Instagram or Facebook.</div>
-				<input id="booking-submit" type="submit" name="Submit">
-
-	   	</form>
-	   </section>
+	   	<div id="booking">
+			<%- include('booking.ejs') %>
+		</div>
 		
-
-
-
-
 	
 			<!-- <p class="center-quote"><i>"Write this down, Take a little note" </i><br>- <b>George Strait</b></p> -->
 

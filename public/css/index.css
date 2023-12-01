@@ -62,7 +62,8 @@ html, body{
 }
 
 #wacky-img{
-	height:150px;
+	width:50%;
+	max-width:420px;
 	border-radius: 6px;
 }
 
@@ -102,7 +103,8 @@ html, body{
 
 
 #millie{
-	height:150px;
+	width:50%;
+	max-width:420px;
 	margin-top:20px;
 	border-radius: 6px;
 }
@@ -153,7 +155,7 @@ max-height:190px;
 	}
 
 	#genres{
-		font-size: 14px;
+		font-size: 13.5px;
 		padding:0;
 	}
 

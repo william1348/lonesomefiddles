@@ -9,6 +9,11 @@ $(document).ready(function(){
     // }).then(function(data) {
     // 	 populateCategories(data.categories);
     // });
+
+//   var viewportOffset = $('#nav')[0].getBoundingClientRect();
+// // these are relative to the viewport, i.e. the window
+// var top = viewportOffset.top;
+// alert(top);
 });
 
 

@@ -17,19 +17,18 @@
 	<div id="booking-done-title">Thanks for reaching out! I'll be in contact soon. </div>
 </section>
 <script>
-   	  	$("#booking-form").submit(function(e){
-
-   	  		e.preventDefault();
-
-   	  		$.ajax({
-                url: '/booking',
-                type: 'post',
-                dataType: 'application/json',
-                data: $("#booking-form").serialize(),
-                complete:function(data){
-                	$('#booking-container').slideUp(800);
-                	$('#booking-done').fadeIn(300);
-                }
-        	});
-   	  	});
+  	$("#booking-form").submit(function(e){
+  		e.preventDefault();
+  		$.ajax({
+        url: '/booking',
+        type: 'post',
+        dataType: 'application/json',
+        data: $("#booking-form").serialize(),
+        complete:function(data){
+        	$('#booking-container').slideUp(800);
+        	$('#booking-done').fadeIn(300);
+        	$('#message-me-text').fadeOut();
+        }
+	});
+  	});
 </script> 

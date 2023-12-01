@@ -8,6 +8,7 @@
 	<script src="js/model.js"></script>
 	<script src="js/util.js"></script>
 	<script src="js/index.js"></script>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -25,7 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
 </head>
 <body>
-	<%- include('navigation.ejs') %>
+	<div id="nav"><%- include('navigation.ejs') %></div>
 	<a href="#booking"><div id="cta-tag">BOOKING / CONTACT</div></a>
 	<!-- <div id="app"></div> -->
 	<section id="main-section">
@@ -76,7 +77,8 @@
 
 		<section id="freelance">
 			<div class="heading">Web Design & Development </div>
-			<p>I've been building websites and mobile apps for 12 years, including 10 in the professional workspace. I've worked on production apps with millions of global users (Bookshelf, STARZ), and startups where I was the lead engineer and defacto UI/UX designer. You can find my full credentials on <a href="linkedin">LinkedIn</a>. Check out <a href="https://wackypackies.com">WackyPackies.com</a> for a complete demo of my visual and full-stack development skills. <br><b>Message me below if you'd like to chat!</b>
+			<p>I've been building websites and mobile apps for 12 years, including 10 in the professional workspace. I've worked on production apps with millions of global users (Bookshelf, STARZ), and startups where I was the lead engineer and defacto UI/UX designer. You can find my full credentials on <a href="linkedin">LinkedIn</a>. Check out <a href="https://wackypackies.com">WackyPackies.com</a> for a complete demo of my visual and full-stack development skills. </p>
+			<p><b><span id="message-me-text">Message me below if you'd like to chat!</span></b></p>
 
 <!-- 
 			Here are three principles important to me: </p>
@@ -108,8 +110,6 @@
 		<div id="booking">
 			<%- include('booking.ejs') %>
 		</div>
-
-
 
 	</section>
 
