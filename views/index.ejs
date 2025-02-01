@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>lonesomefiddles</title>
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Daddy Good Times</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/model.js"></script>
@@ -15,120 +16,60 @@
 	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
 	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300&display=swap"
+		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css" />
 </head>
+
 <body>
-	<div id="nav"><%- include('navigation.ejs') %></div>
-	<a href="/music"><div id="cta-tag">MUSIC / BOOKING</div></a>
-	<!-- <div id="app"></div> -->
-	<section id="main-section">
-		<div id="title">
-			<!-- <img id="will-logo" src="/img/will-kung-logo.png"> -->
-			<div class="heading">Will Kung <span id="denver">| Denver, Colorado</span></div>
-			<div id="genres">Musician &#x2022; Software Developer &#x2022; Business Owner </div>
-		</div>
+	<!-- <section id="main" class="parallax">
+		<div id="bandText">Daddy Good Times</div>
+		<div id="bookingText">booking@daddygoodtimes.com</div>
+		<div id="mainScroller">rally long text</div>
+	</section> -->
 
-	   <div class="slider">
-	   	    <div class="slider-img-container"><img class="slider-img" src="/img/home-carousel/will-4.JPG"></div>
-	        <div class="slider-img-container"><img class="slider-img" src="/img/home-carousel/will-7.jpeg"></div>	   		   
-	        <div class="slider-img-container"><img class="slider-img" src="/img/home-carousel/rene-2.jpg"></div>	   		   
-	        <div class="slider-img-container"><img class="slider-img" src="/img/home-carousel/cervs-2.jpeg"></div>	   		   
-	   </div>
+	<section id="main" class="parallax"></section>
+	<div id="bandText">Daddy Good Times</div>
+	<div id="bookingText">booking@daddygoodtimes.com</div>
 
-	   <div id="bio">
-	   	<p><span class="code-link"><span id="greeting"></span></span>Hello, and thanks for stopping by. This is a landing page for my various projects, as well as a booking contact for my <a href="/music">music</a> and freelance <a href="#freelance">services</a>. A little about me - I was born and raised in Massachusetts, the son of hardworking Taiwanese immigrants. Denver has been my home the past 4+ years. After graduating with a degree in Electrical & Computer Engineering, I spent the past decade working in the tech industry. I design and build websites and apps, and I can help you kickstart your dream today! </p>
+	<!-- <video controls width="100%">
+			<source src="path/to/your/video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video> -->
+	<section id="mainScroller">
 
-	    Scroll down to learn more, but before you do, please consider this picture of my dog, Millie:
-
- 		<div ><img id="millie" src="/img/millie-carousel/millie-1.png"></div>
-		<!-- <div class="millie-slider">
-	   	    <div class="slider-img-container"><img class="slider-img" src="/img/millie-carousel/millie-1.png"></div>
-	   	    <div class="slider-img-container"><img class="slider-img" src="/img/millie-carousel/millie-1.png"></div>
-	   	    <div class="slider-img-container"><img class="slider-img" src="/img/millie-carousel/millie-1.png"></div>
-	   	    <div class="slider-img-container"><img class="slider-img" src="/img/millie-carousel/millie-1.png"></div>
-	   	    <div class="slider-img-container"><img class="slider-img" src="/img/millie-carousel/millie-1.png"></div>   		   
-	   </div>
-
-	   -->
-
-
-	
-			<!-- <p class="center-quote"><i>"Write this down, Take a little note" </i><br>- <b>George Strait</b></p> -->
-
-		</div> 
-
-		<section id="wacky">
-			<div class="heading">WackyPackies.com</div>
-			<div>
-				<p>
-					Rene and I started our business, WackyPackies in April 2023. Our goal is to make gift giving <b>easy</b>, and to help others spread love to those who matter most. Gift boxes are nothing new, but we believe our unique implementation, customizability, and choice of products help us stand out. If you have <b>Social Media, Marketing</b> or <b>E-Commerce </b> experience, or a good entreprenural sense and you want to collab, <b>let's talk</b>! Check out our website at <a href="https://wackypackies.com">WackyPackies.com</a>.
-				</p>
-				<img id="wacky-img" src="/img/wacky-1.png">
+		<div id="showsContainer">
+			<div id="upcomingShowsText">Upcoming Shows:</div>
+			<div class="showItem">
+				<div class="showName">Daddy Good Times @ Gold Hill General Store</div>
+				<div class="showLocation">Gold Hill, Colorado</div>
+				<div class="showDate">Febraury 22, 2025</div>
 			</div>
-		</section> <!-- wacky -->
 
-		<section id="freelance">
-			<div class="heading">Web Design & Development </div>
-			<p>I've been building websites and mobile apps for 12 years, including 10 in the professional workspace. I've worked on production apps with millions of global users (Bookshelf, STARZ), and startups where I was the lead engineer and defacto UI/UX designer. You can find my full credentials on <a href="linkedin">LinkedIn</a>. Check out <a href="https://wackypackies.com">WackyPackies.com</a> for a demo of my visual and full-stack development skills. </p>
-			<p><b><span id="message-me-text">Message me below if you'd like to chat!</span></b></p>
+			<div class="showItem"></div>
+				<div class="showName">Daddy Good Times @ Goosetown Station</div>
+				<div class="showLocation">Golden, Colorado</div>
+				<div class="showDate">April 4, 2025</div>
+			</div>
 
-<!-- 
-			Here are three principles important to me: </p>
-
-			<div id="freelance-container">
-				<div id="freelance-skill" class="freelance-skill">
-					<div class="skill-title">Responsive Design</div>
-					<div class="skill-desc">
-						To me, responsive design means coding for <i>adaptability</i> - not just reszing graphics and content, but a broader approach taking into account how users interact with the app differently on different platforms.
-					</div>
-				</div>
-				<div id="freelance-skill1" class="freelance-skill">
-					<div class="skill-title">Minimalist</div>
-					<div class="skill-desc">
-						Keep it simple! Intuitive UI/UX. Fast loading mobile apps and web pages, no clunky plugins or unnecessary third party extensions. 
-					</div>
-				</div>
-			
-				<div id="freelance-skill3" class="freelance-skill">
-					<div class="skill-title">Best Practices</div>
-					<div class="skill-desc">
-						Everything from User centric design and accessibility to Meta tags, SEO optiomization, image compression. Clean, readable, reusable code. 
-					</div>
-				</div>
-			</div> -->
-		</section>
-		<!-- freelance -->
-
-		<div id="booking">
-			<%- include('booking.ejs') %>
 		</div>
+
+		<div id="footer">Have a nice day :)</div>
 
 	</section>
 
 
-	<div id="bottom-text"><span id="keep-the-dream"><i>Keep The Dream Alive!</i></span></div>
-
-
-	<%- include('footer.ejs') %>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
-
+	</section>
 </body>
-<!-- <script type="text/jsx">
-      const app = document.getElementById('app');
-      ReactDOM.render(<h1>Develop. Preview. Ship. 🚀</h1>, app);
-    </script> -->
 
-<script type="text/javascript">
-	var age = whatsMyAgeAgain();
-	$("#age").text(age);
-</script>
 
 </html>
