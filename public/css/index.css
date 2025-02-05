@@ -139,9 +139,9 @@ html {
 	}
 
 	#main {
-		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 1) 60%), url('/img/photo.jpg');
+		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 1) 70%), url('/img/photo.jpg');
 		background-attachment: fixed;
-		background-position: center -35px;
+		background-position: center -0px;
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin-top: -535px;
