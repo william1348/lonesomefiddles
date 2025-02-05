@@ -1,5 +1,10 @@
+body,
+html {
+	font-family: 'Sour Gummy', sans-serif !important;
+	color: #493f43;
+}
+
 #backgroundImage {
-	opacity: 0.8;
 	width: 100%;
 }
 
@@ -13,92 +18,101 @@
 }
 
 #bookingText {
-	font-size: 22px;
+	font-size: 21px;
 	width: 100%;
+	font-weight: 500;
 	margin: auto;
 	text-align: center;
 	margin-top: 0px;
+	color: #493f43;
 }
 
-#showsParentContainer{
-	width:100%;
+#showsParentContainer {
+	width: 100%;
 	text-align: center;
-	margin-top:50px;
+	margin-top: 50px;
 }
 
-#showContainer{
+#showContainer {}
 
-}
-
-.showsToggleSelected{
+.showsToggleSelected {
 	text-decoration: underline;
 	font-weight: 800;
 	font-size: 15px;
-	color:green;
+	color: green;
 	cursor: default !important;
 }
 
 
-#upcomingShowsText{
-	margin:10px;
+#upcomingShowsText {
+	margin: 10px;
 	font-size: 15px;
-	display:inline-block;
+	display: inline-block;
 	cursor: pointer;
 }
 
-#archivedShowsText{
-	margin:10px;
+#archivedShowsText {
+	margin: 10px;
 	font-size: 15px;
-	display:inline-block;
+	display: inline-block;
 	cursor: pointer;
 }
 
-#archivedShowsText:hover, #upcomingShowsText:hover{
+#archivedShowsText:hover,
+#upcomingShowsText:hover {
 	text-decoration: underline;
 }
 
-#archivedShowsContainer{
-	display:none;
+#archivedShowsContainer {
+	display: none;
 }
 
-#upcomingShowsContainer{
-}
+#upcomingShowsContainer {}
 
-#igContainer{
-	width:100%;
+#igContainer {
+	width: 100%;
 	text-align: center;
-	margin:auto;
+	margin: auto;
 }
 
-.igItem{
-	width:50%;
+.igItem {
+	width: 50%;
 	overflow: hidden;
 }
 
+#logoPlaceholderImg {
+	width: 600px;
+	margin: auto;
+	margin-top: 20px;
+}
 
-#footer{
-	font-size:10px;
+#logoPlaceholder {
+	text-align: center;
+	width: 100%;
+}
+
+#footer {
+	font-size: 10px;
 
 }
 
-.showItem{
-	margin-top:20px;
+.showItem {
+	margin-top: 20px;
 }
 
-.showName{
-	font-weight: 800;
-	font-size: 16px;
+.showName {
+	font-weight: 600;
+	font-size: 18px;
+	color: #493f43;
 }
 
 #main {
-	opacity: 0.9;
 	background-image: url('/img/photo.jpg');
 	background-attachment: fixed;
 	background-position: center -120px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-top: -400px;
-	opacity: 0.5;
 }
 
 #mainScroller {
@@ -115,14 +129,21 @@
 	background-size: cover;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+
+	body{
+		overflow-x: hidden;
+	}
+	#logoPlaceholderImg {
+		width: 90%;
+	}
+
 	#main {
-		opacity:1;
-		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 1) 63%), url('/img/photo.jpg');
+		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 1) 60%), url('/img/photo.jpg');
 		background-attachment: fixed;
-		background-position: center -30px;
+		background-position: center -35px;
 		background-repeat: no-repeat;
 		background-size: contain;
-		margin-top: -500px;
+		margin-top: -535px;
 	}
 }
